@@ -1,10 +1,9 @@
 /*-- scss:defaults --*/
 
-/* Import Computer Modern Unicode Serif */
-@import url('https://cdn.jsdelivr.net/npm/computer-modern@1.0.0/cmun-serif.css');
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap';
 
-$font-family: "CMU Serif", serif;
-$font-family-serif: "CMU Serif", serif;
+$font-family: "Roboto", sans-serif;
+$font-family-serif: "Roboto", sans-serif;
 
 /*-- scss:rules --*/
 kbd,
