@@ -17,7 +17,7 @@ format:
     theme:
       light: [litera, styles.scss]
     highlight-style: a11y-dark
-    mainfont: "CMU Serif"
+    mainfont: "Roboto"
     code-copy: true
     code-overflow: wrap
 
