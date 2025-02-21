@@ -5,6 +5,10 @@
 $font-family: "Roboto", sans-serif;
 $font-family-serif: "Roboto", sans-serif;
 
+body {
+    font-family: "CMU Serif", serif !important;
+}
+
 /*-- scss:rules --*/
 kbd,
 .kbd {
