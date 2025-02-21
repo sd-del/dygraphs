@@ -21,7 +21,6 @@ format:
     mainfont: "Roboto"
     code-copy: true
     code-overflow: wrap
-    include-before-body: script.js
 
 
 execute:
