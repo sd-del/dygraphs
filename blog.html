@@ -174,6 +174,27 @@ window.Quarto = {
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TUw=">ML <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+document.addEventListener("DOMContentLoaded", function () {
+    const themeToggle = document.createElement("button");
+    themeToggle.innerText = "🌙 / ☀️";
+    themeToggle.classList.add("theme-toggle");
+    document.body.appendChild(themeToggle);
+
+    function setTheme(mode) {
+        document.documentElement.setAttribute("data-bs-theme", mode);
+        localStorage.setItem("theme", mode);
+    }
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("theme") || "light";
+    setTheme(savedTheme);
+
+    themeToggle.addEventListener("click", function () {
+        const currentTheme = document.documentElement.getAttribute("data-bs-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+        setTheme(newTheme);
+    });
+});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -200,7 +221,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TUw=" data-listing-date-sort="1739491200000" data-listing-file-modified-sort="1740109504968" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="quarto-post image-right" data-index="0" data-categories="TUw=" data-listing-date-sort="1739491200000" data-listing-file-modified-sort="1740109536741" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/visualisation.html" class="no-external"></a></p><a href="./posts/visualisation.html" class="no-external">
 <p class="card-img-top"><img src="posts/visualisation_files/figure-html/cell-3-output-1.png"  class="thumbnail-image card-img"/></p>
@@ -238,7 +259,7 @@ Nipun Batra
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1739491200000" data-listing-file-modified-sort="1740109504968" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1739491200000" data-listing-file-modified-sort="1740109536741" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
 <div class="thumbnail">
 <p><a href="./posts/welcome.html" class="no-external"></a></p><a href="./posts/welcome.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
