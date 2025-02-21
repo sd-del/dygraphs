@@ -15,8 +15,7 @@ website:
 format:
   html:
     theme:
-      light: litera
-      dark: darkly
+      light: [litera, styles.scss]
     highlight-style: a11y-dark
     mainfont: "Roboto"
     code-copy: true
