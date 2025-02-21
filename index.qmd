@@ -2,4 +2,4 @@
 title: dygraphs
 ---
 
-[Documentation](https://dygraphs.com)
+[Documentation](https://dygraphs.com/options.html)
