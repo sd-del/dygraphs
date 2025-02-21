@@ -1,5 +1,5 @@
 ---
-title: Quarto Template
+title: dygraphs
 ---
 
-Quarto template Text!
+Documentation: https://dygraphs.com
