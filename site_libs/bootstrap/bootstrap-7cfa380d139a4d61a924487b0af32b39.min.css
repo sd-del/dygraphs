@@ -1,4 +1,4 @@
-@import'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap';.theme-toggle{position:fixed;top:10px;right:10px;background:var(--bs-body-bg);color:var(--bs-body-color);padding:5px 10px;border-radius:5px;cursor:pointer;font-size:14px;transition:all .3s ease-in-out}.theme-toggle:hover{background:var(--bs-secondary-bg)}[data-bs-theme=dark] .theme-toggle{background:var(--bs-dark);color:var(--bs-light)}/*!
+@import'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap';/*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
