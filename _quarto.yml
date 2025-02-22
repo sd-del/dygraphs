@@ -10,19 +10,19 @@ website:
         text: Home
       - href: blog.qmd
         text: Blog
-      - href: index.qmd#grp-info
+      - href: index.qmd#group-info
         text: Group Information
-      - href: index.qmd#intro
+      - href: index.qmd#introduction
         text: Introduction
-      - href: index.qmd#inst-and-setup
+      - href: index.qmd#installation-and-setup
         text: Installation and Setup
       - href: index.qmd#key-features
         text: Key Features and Explanation
       - href: index.qmd#use-cases
         text: Use Cases
-      - href: index.qmd#conc
+      - href: index.qmd#conclusion
         text: Conclusion
-      - href: index.qmd#ref
+      - href: index.qmd#references
         text: References
 
 
