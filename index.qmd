@@ -4,18 +4,28 @@ title: dygraphs
 
 # Group Information
 
+---
+
 # Introduction
+
+---
 
 # Installation and Setup
 
+---
+
 # Key Features and Explanation
+
+---
 
 # Use Cases
 
+---
+
 # Conclusion
+
+---
 
 # References
 
 Documentation: [dygraphs](https://dygraphs.com/options.html)
-
-Lorem ipsum
