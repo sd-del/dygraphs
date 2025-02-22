@@ -8,14 +8,10 @@ title: dygraphs
 
 ### Exposition Assignment
 
-Group Number: J-023
+Group Number: J-023<br>
 
 Members
-| Name    | Age | Country  |
-|---------|----:|---------|
-| Alice   |  25 | USA     |
-| Bob     |  30 | Canada  |
-| Charlie |  28 | UK      |
+
 
 
 Topic: dygraphs
@@ -46,9 +42,12 @@ Topic: dygraphs
 
 ### dygraphs
 
+Website: [Website](https://dygraphs.com)<br>
 Documentation: [dygraphs](https://dygraphs.com/options.html)<br>
 
 ### Website building
 
 Template used: [Template](https://github.com/nipunbatra/quarto-template)<br>
 Tutorial playlist: [Playlist](https://www.youtube.com/playlist?list=PLftoLyLEwECBfia83pVwQCGX_Of3S5x-v)
+
+---
