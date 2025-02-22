@@ -4,6 +4,8 @@ title: dygraphs
 
 # Group Information
 
+### Exposition Assignment
+
 Group Number: J-023
 
 Members
