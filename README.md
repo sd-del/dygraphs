@@ -1,1 +1,1 @@
-# quarto-template
+# dygraphs blog
