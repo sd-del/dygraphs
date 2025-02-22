@@ -22,11 +22,11 @@ Topic: dygraphs
 
 ---
 
-# Introduction {#intro}
+# Introduction {#introduction}
 
 ---
 
-# Installation and Setup {#inst-and-setup}
+# Installation and Setup {#installation-and-setup}
 
 ---
 
@@ -38,11 +38,11 @@ Topic: dygraphs
 
 ---
 
-# Conclusion {#conc}
+# Conclusion {#conclusion}
 
 ---
 
-# References {#ref}
+# References {#references}
 
 ### dygraphs
 
