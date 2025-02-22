@@ -45,5 +45,5 @@ Documentation: [dygraphs](https://dygraphs.com/options.html)<br>
 
 ### Website building
 
-Template used: [Template](https://github.com/nipunbatra/quarto-template)
+Template used: [Template](https://github.com/nipunbatra/quarto-template)<br>
 Tutorial playlist: [Playlist](https://www.youtube.com/playlist?list=PLftoLyLEwECBfia83pVwQCGX_Of3S5x-v)
