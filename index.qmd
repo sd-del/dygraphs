@@ -4,7 +4,7 @@ title: dygraphs
 
 ---
 
-# Group Information {#grp-info}
+# Group Information {#group-info}
 
 ### Exposition Assignment
 
