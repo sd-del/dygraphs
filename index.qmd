@@ -40,3 +40,4 @@ Topic: dygraphs
 # References
 
 Documentation: [dygraphs](https://dygraphs.com/options.html)
+Template used: [Template](https://github.com/nipunbatra/quarto-template)
