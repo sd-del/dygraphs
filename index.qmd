@@ -4,7 +4,7 @@ title: dygraphs
 
 ---
 
-# Group Information
+# Group Information {#grp-info}
 
 ### Exposition Assignment
 
@@ -22,27 +22,27 @@ Topic: dygraphs
 
 ---
 
-# Introduction
+# Introduction {#intro}
 
 ---
 
-# Installation and Setup
+# Installation and Setup {#inst-and-setup}
 
 ---
 
-# Key Features and Explanation
+# Key Features and Explanation {#key-features}
 
 ---
 
-# Use Cases
+# Use Cases {#use-cases}
 
 ---
 
-# Conclusion
+# Conclusion {#conc}
 
 ---
 
-# References {#References}
+# References {#ref}
 
 ### dygraphs
 
