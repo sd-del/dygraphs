@@ -2,6 +2,20 @@
 title: dygraphs
 ---
 
-[Documentation](https://dygraphs.com/options.html)
+# Group Information
+
+# Introduction
+
+# Installation and Setup
+
+# Key Features and Explanation
+
+# Use Cases
+
+# Conclusion
+
+# References
+
+Documentation: [dygraphs](https://dygraphs.com/options.html)
 
 Lorem ipsum
