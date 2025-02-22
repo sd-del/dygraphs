@@ -6,7 +6,7 @@ title: dygraphs
 
 # Group Information {#group-info}
 
-### Exposition Assignment
+### Exposition Assignment<br>
 
 Group Number: J-023<br>
 
