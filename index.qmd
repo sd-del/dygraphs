@@ -7,11 +7,12 @@ title: dygraphs
 Group Number: J-023
 
 Members
-|        Name         | Roll Number  |
-|---------------------|--------------|
-|    Srihith Dibba    |   24110356   |
-| Soni Poojan Deepak  |   24110353   |
-|    Soham Biswas     |   24110346   |
+| Name    | Age | Country  |
+|---------|----:|---------|
+| Alice   |  25 | USA     |
+| Bob     |  30 | Canada  |
+| Charlie |  28 | UK      |
+
 
 Topic: dygraphs
 
