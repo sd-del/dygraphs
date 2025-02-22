@@ -6,13 +6,11 @@ title: dygraphs
 
 # Group Information {#group-info}
 
-### Exposition Assignment<br>
+### Exposition Assignment
 
 Group Number: J-023<br>
 
-Members
-
-
+Members<br>
 
 Topic: dygraphs
 
