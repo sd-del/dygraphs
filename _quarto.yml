@@ -6,10 +6,6 @@ website:
   title: "dygraphs"
   navbar:
     right:
-      - href: index.qmd
-        text: Home
-      - href: blog.qmd
-        text: Blog
       - href: index.qmd#group-info
         text: Group Information
       - href: index.qmd#introduction
