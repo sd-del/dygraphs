@@ -1,5 +1,5 @@
 ---
-title: dygraphs
+title: Exposition Assignment: dygraphs blog
 ---
 
 [Documentation](https://dygraphs.com/options.html)
