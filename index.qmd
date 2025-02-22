@@ -4,6 +4,17 @@ title: dygraphs
 
 # Group Information
 
+Group Number: J-023
+
+Members
+|        Name         | Roll Number  |
+|---------------------|--------------|
+|    Srihith Dibba    |   24110356   |
+| Soni Poojan Deepak  |   24110353   |
+|    Soham Biswas     |   24110346   |
+
+Topic: dygraphs
+
 ---
 
 # Introduction
