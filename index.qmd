@@ -42,7 +42,7 @@ Topic: dygraphs
 
 ---
 
-# References
+# References {#References}
 
 ### dygraphs
 
