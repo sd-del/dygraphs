@@ -10,7 +10,7 @@ title: dygraphs
 
 Group Number: J-023<br>
 
-Members<br>
+Members: Srihith Dibba (24110356), Soni Poojan Deepak (24110353), Soham Biswas (24110346)<br>
 
 Topic: dygraphs
 
