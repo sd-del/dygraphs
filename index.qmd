@@ -1,5 +1,5 @@
 ---
-title: Dygraphs blog
+title: "Dygraphs blog"
 format:
   html:
     include-in-header:
