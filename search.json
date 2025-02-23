@@ -21,23 +21,23 @@
     "text": "import numpy as np\nimport matplotlib.pyplot as plt\n%matplotlib inline\n%config InlineBackend.figure_format = 'retina'\n\n\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\nplt.plot(x, y)"
   },
   {
-    "objectID": "index.html#including-dygraphs",
-    "href": "index.html#including-dygraphs",
-    "title": "dygraphs blog",
-    "section": "Including dygraphs",
-    "text": "Including dygraphs\nThere are multiple ways to include dygraphs in your project.\n\nUsing a Content Delivery Network (CDN)\nA content delivery network (CDN) is a network of distributed servers that deliver web content (e.g., JavaScript, CSS etc.) from servers closest to the users, improving load speed and performance. CDNs help handle high traffic efficiently. UNPKG is a CDN that hosts dygraphs.\n&lt;script type=\"text/javascript\" src=\"https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.js\"&gt;&lt;/script&gt;\n&lt;link rel=\"stylesheet\" type=\"text/css\" href=\"https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.css\" /&gt;\nInclude this code inside the &lt;head&gt; section of a HTML page to use dygraphs.\n\n\nInstalling via npm\nnpm install dygraphs"
+    "objectID": "index.html#including-dygraphs-in-your-project",
+    "href": "index.html#including-dygraphs-in-your-project",
+    "title": "Dygraphs blog",
+    "section": "Including Dygraphs in your project",
+    "text": "Including Dygraphs in your project\nThere are multiple ways to include Dygraphs in your project.\n\nUsing a Content Delivery Network (CDN)\nA content delivery network (CDN) is a network of distributed servers that deliver web content (e.g., JavaScript, CSS etc.) from servers closest to the users, improving load speed and performance. CDNs help handle high traffic efficiently. UNPKG is a CDN that hosts dygraphs.\n&lt;script type=\"text/javascript\" src=\"https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.js\"&gt;&lt;/script&gt;\n&lt;link rel=\"stylesheet\" type=\"text/css\" href=\"https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.css\" /&gt;\nInclude this code inside the &lt;head&gt; section of a HTML page to use dygraphs.\n\n\nInstalling via npm\nnpm install dygraphs"
   },
   {
     "objectID": "index.html#dygraphs",
     "href": "index.html#dygraphs",
-    "title": "dygraphs blog",
+    "title": "Dygraphs blog",
     "section": "dygraphs",
-    "text": "dygraphs\nWebsite: Website Documentation: dygraphs CDN: UNPKG"
+    "text": "dygraphs\nWebsite: Website Documentation: Dygraphs CDN: UNPKG"
   },
   {
     "objectID": "index.html#website-building",
     "href": "index.html#website-building",
-    "title": "dygraphs blog",
+    "title": "Dygraphs blog",
     "section": "Website building",
     "text": "Website building\nTemplate used: Template Tutorial playlist: Playlist"
   }
