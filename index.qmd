@@ -14,7 +14,9 @@ format: html
 
 Group Number: J-023<br>
 
-Topic: Dygraphs
+Topic: Dygraphs<br>
+
+One-line description: Fast, flexible open-source JavaScript charting library for large datasets.
 
 ---
 
