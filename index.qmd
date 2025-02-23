@@ -68,7 +68,7 @@ Once you have included Dygraphs into your project, you can use it directly.
 
 ---
 
-# Key Features and Explanation {#key-features}
+# Key Features {#key-features}
 
 ---
 
