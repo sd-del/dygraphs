@@ -21,30 +21,30 @@
     "text": "import numpy as np\nimport matplotlib.pyplot as plt\n%matplotlib inline\n%config InlineBackend.figure_format = 'retina'\n\n\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\nplt.plot(x, y)"
   },
   {
-    "objectID": "index.html#including-dygraphs-in-your-project",
-    "href": "index.html#including-dygraphs-in-your-project",
-    "title": "Dygraphs blog",
-    "section": "Including Dygraphs In Your Project",
-    "text": "Including Dygraphs In Your Project\nThere are multiple ways to include Dygraphs in your project.\n\nUsing a Content Delivery Network (CDN)\nA content delivery network (CDN) is a network of distributed servers that deliver web content (e.g., JavaScript, CSS etc.) from the closest servers to users, improving load speed and performance. CDNs help handle high traffic efficiently. UNPKG is a CDN that hosts dygraphs.\n&lt;script type=\"text/javascript\" src=\"https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.js\"&gt;&lt;/script&gt;\n&lt;link rel=\"stylesheet\" type=\"text/css\" href=\"https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.css\" /&gt;\nInclude this code inside the &lt;head&gt; section of an HTML page to use Dygraphs.\n\n\nInstalling via npm\nIf you are using a JavaScript framework, install Dygraphs using npm.\nnpm install dygraphs\nThen, import it into your JavaScript file.\nimport Dygraph from \"dygraphs\";"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Dygraphs in Quarto",
+    "section": "",
+    "text": "Include this code inside the &lt;head&gt; section of an HTML page to use Dygraphs."
   },
   {
     "objectID": "index.html#verifying-installation",
     "href": "index.html#verifying-installation",
-    "title": "Dygraphs blog",
+    "title": "Dygraphs in Quarto",
     "section": "Verifying Installation",
     "text": "Verifying Installation\nIn order to confirm whether Dygraphs has been loaded successfully or not, run the following command:\nconsole.log(typeof Dygraph); \n// Expected output: \"function\"\nIf you are using an HTML file, include this as part of the &lt;script&gt; section of the &lt;body&gt; section. If you are using a Javascript file, add this command to the file containing the import.\nOnce you have included Dygraphs into your project, you can use it directly."
   },
   {
     "objectID": "index.html#dygraphs",
     "href": "index.html#dygraphs",
-    "title": "Dygraphs blog",
+    "title": "Dygraphs in Quarto",
     "section": "Dygraphs",
     "text": "Dygraphs\nWebsite: Website Documentation: Dygraphs CDN: UNPKG"
   },
   {
     "objectID": "index.html#website-building",
     "href": "index.html#website-building",
-    "title": "Dygraphs blog",
+    "title": "Dygraphs in Quarto",
     "section": "Website building",
     "text": "Website building\nTemplate used: Template Tutorial playlist: Playlist"
   }
