@@ -67,6 +67,7 @@ npm install dygraphs
 
 Website: [Website](https://dygraphs.com)<br>
 Documentation: [dygraphs](https://dygraphs.com/options.html)<br>
+CDN: [UNPKG](https://unpkg.com)
 
 ## Website building
 
