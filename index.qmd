@@ -18,7 +18,7 @@ Topic: Dygraphs
 
 # Introduction {#introduction}
 
-Dygraphs is an open-source Javascript charting library that is designed for interactive visualization of large time-series datasets. It allows for real-time data analysis by enabling users to hover over the graphs and read the data points. Dygraphs supports multiple data series, making it useful for comparing trends over time. It is also useful for applications that require real-time updates, zooming and panning. Additionally, it supports CSV and JSON formats, making it easy to integrate with various data sources.
+Dygraphs is an open-source Javascript charting library that is designed for interactive visualization of large time-series datasets. It enables real-time data analysis, allowing users to hover over graphs to view precise data points. Dygraphs supports multiple data series, making it useful for comparing trends over time. It supports real-time updates, zooming and panning. Additionally, it supports CSV and JSON formats, making it easy to integrate with various data sources.
 
 ---
 
