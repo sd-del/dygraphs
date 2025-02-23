@@ -26,7 +26,7 @@ Dygraphs is an open-source Javascript charting library that is designed for inte
 
 Dygraphs is easy to use and requires minimal setup. 
 
-## Including Dygraphs in your project
+## Including Dygraphs In Your Project
 
 There are multiple ways to include Dygraphs in your project.
 
@@ -55,7 +55,17 @@ Then, import it into your JavaScript file.
 import Dygraph from "dygraphs";
 ```
 
-Once you have included Dygraphs into your project, you can directly use it.
+## Verifying Installation
+
+In order to confirm whether Dygraphs has been loaded successfully or not, run the following command:
+
+```js
+console.log(typeof Dygraph); \\ Expected output: "function"
+```
+
+If you are using an HTML file, include this as part of the `<script` section of the `<body` section. If you are using a Javascript file, type the command in the file containing the import.
+
+Once you have included Dygraphs into your project, you can use it directly.
 
 ---
 
