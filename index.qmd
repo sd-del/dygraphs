@@ -26,13 +26,13 @@ Dygraphs is an open-source Javascript charting library that is designed for inte
 
 Dygraphs is easy to use and requires minimal setup. 
 
-### Including dygraphs
+## Including dygraphs
 
-There are multiple ways to include dygraphs in your project
+There are multiple ways to include dygraphs in your project.
 
-#### Using a Content Delivery Network
+### Using a Content Delivery Network
 
-#### Installing via npm
+### Installing via npm
 
 ```sh
 npm install dygraphs
@@ -54,12 +54,12 @@ npm install dygraphs
 
 # References {#references}
 
-### dygraphs
+## dygraphs
 
 Website: [Website](https://dygraphs.com)<br>
 Documentation: [dygraphs](https://dygraphs.com/options.html)<br>
 
-### Website building
+## Website building
 
 Template used: [Template](https://github.com/nipunbatra/quarto-template)<br>
 Tutorial playlist: [Playlist](https://www.youtube.com/playlist?list=PLftoLyLEwECBfia83pVwQCGX_Of3S5x-v)
