@@ -36,6 +36,7 @@ There are multiple ways to include dygraphs in your project
 
 ```sh
 npm install dygraphs
+```
 
 ---
 
