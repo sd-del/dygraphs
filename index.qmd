@@ -12,7 +12,7 @@ format:
 
 # Group Information {#group-info}
 
-### Exposition Assignment
+## Exposition Assignment
 
 Group Number: J-023<br>
 
