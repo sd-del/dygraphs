@@ -34,7 +34,7 @@ There are multiple ways to include dygraphs in your project.
 
 A content delivery network (CDN) is a network of distributed servers that deliver web content (e.g., JavaScript, CSS etc.) from servers closest to the users, improving load speed and performance. CDNs help handle high traffic efficiently. UNPKG is a CDN that hosts dygraphs.
 
-```{=html}
+```html
 <script type="text/javascript" src="https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.css" />
 ```
