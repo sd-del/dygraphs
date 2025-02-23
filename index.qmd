@@ -39,7 +39,9 @@ A content delivery network (CDN) is a network of distributed servers that delive
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.css" />
 ```
 
-Include this code inside the ```html <head> ``` section of a HTML page to use dygraphs.
+Include this code inside the ```html 
+<head> 
+``` section of a HTML page to use dygraphs.
 
 ### Installing via npm
 
