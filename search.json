@@ -21,11 +21,18 @@
     "text": "import numpy as np\nimport matplotlib.pyplot as plt\n%matplotlib inline\n%config InlineBackend.figure_format = 'retina'\n\n\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\nplt.plot(x, y)"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "index.html#exposition-assignment",
+    "href": "index.html#exposition-assignment",
     "title": "Dygraphs Blog",
-    "section": "",
-    "text": "Include this code inside the &lt;head&gt; section of an HTML page to use Dygraphs."
+    "section": "Exposition Assignment",
+    "text": "Exposition Assignment\nGroup Number: J-023\nTopic: Dygraphs"
+  },
+  {
+    "objectID": "index.html#including-dygraphs-in-your-project",
+    "href": "index.html#including-dygraphs-in-your-project",
+    "title": "Dygraphs Blog",
+    "section": "Including Dygraphs In Your Project",
+    "text": "Including Dygraphs In Your Project\nThere are multiple ways to include Dygraphs in your project.\n\nUsing a Content Delivery Network (CDN)\nA content delivery network (CDN) is a network of distributed servers that deliver web content (e.g., JavaScript, CSS etc.) from the closest servers to users, improving load speed and performance. CDNs help handle high traffic efficiently. UNPKG is a CDN that hosts dygraphs.\n&lt;script type=\"text/javascript\" src=\"https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.js\"&gt;&lt;/script&gt;\n&lt;link rel=\"stylesheet\" type=\"text/css\" href=\"https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.css\" /&gt;\nInclude this code inside the &lt;head&gt; section of an HTML page to use Dygraphs.\n\n\nInstalling via npm\nIf you are using a JavaScript framework, install Dygraphs using npm.\nnpm install dygraphs\nThen, import it into your JavaScript file.\nimport Dygraph from \"dygraphs\";"
   },
   {
     "objectID": "index.html#verifying-installation",
