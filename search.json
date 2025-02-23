@@ -32,7 +32,7 @@
     "href": "index.html#verifying-installation",
     "title": "Dygraphs blog",
     "section": "Verifying Installation",
-    "text": "Verifying Installation\nIn order to confirm whether Dygraphs has been loaded successfully or not, run the following command:\nconsole.log(typeof Dygraph); \n// Expected output: \"function\"\nIf you are using an HTML file, include this as part of the &lt;script&gt; section of the &lt;body&gt; section. If you are using a Javascript file, type the command in the file containing the import.\nOnce you have included Dygraphs into your project, you can use it directly."
+    "text": "Verifying Installation\nIn order to confirm whether Dygraphs has been loaded successfully or not, run the following command:\nconsole.log(typeof Dygraph); \n// Expected output: \"function\"\nIf you are using an HTML file, include this as part of the &lt;script&gt; section of the &lt;body&gt; section. If you are using a Javascript file, add this command to the file containing the import.\nOnce you have included Dygraphs into your project, you can use it directly."
   },
   {
     "objectID": "index.html#dygraphs",
