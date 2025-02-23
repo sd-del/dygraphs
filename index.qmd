@@ -1,8 +1,32 @@
 ---
-title: "Dygraphs blog"
+title: "Dygraphs in Quarto"
 format: html
-include-before-body: dygraphs.html
 ---
+
+<!-- Load Dygraphs directly in the HTML section -->
+<script type="text/javascript" src="https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.css" />
+
+```{=html}
+<div id="graphdiv" style="width: 600px; height: 300px;"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var data = "Date,Value\n" +
+               "2023-01-01,10\n" +
+               "2023-01-02,20\n" +
+               "2023-01-03,15\n" +
+               "2023-01-04,25\n";
+    
+    new Dygraph(document.getElementById("graphdiv"), data, {
+      title: 'Sample Dygraph',
+      xlabel: 'Date',
+      ylabel: 'Value',
+      labelsSeparateLines: true,
+      legend: 'always'
+    });
+  });
+</script>
 
 ---
 
