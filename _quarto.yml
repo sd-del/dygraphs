@@ -13,7 +13,7 @@ website:
       - href: index.qmd#installation-and-setup
         text: Installation and Setup
       - href: index.qmd#key-features
-        text: Key Features and Explanation
+        text: Key Features
       - href: index.qmd#use-cases
         text: Use Cases
       - href: index.qmd#conclusion
