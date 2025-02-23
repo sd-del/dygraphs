@@ -1,5 +1,5 @@
 ---
-title: dygraphs blog
+title: Dygraphs blog
 ---
 
 ---
@@ -12,7 +12,7 @@ Group Number: J-023<br>
 
 Members: Srihith Dibba (24110356), Soni Poojan Deepak (24110353), Soham Biswas (24110346)<br>
 
-Topic: dygraphs
+Topic: Dygraphs
 
 ---
 
@@ -26,9 +26,9 @@ Dygraphs is an open-source Javascript charting library that is designed for inte
 
 Dygraphs is easy to use and requires minimal setup. 
 
-## Including dygraphs
+## Including Dygraphs in your project
 
-There are multiple ways to include dygraphs in your project.
+There are multiple ways to include Dygraphs in your project.
 
 ### Using a Content Delivery Network (CDN)
 
@@ -66,7 +66,7 @@ npm install dygraphs
 ## dygraphs
 
 Website: [Website](https://dygraphs.com)<br>
-Documentation: [dygraphs](https://dygraphs.com/options.html)<br>
+Documentation: [Dygraphs](https://dygraphs.com/options.html)<br>
 CDN: [UNPKG](https://unpkg.com)
 
 ## Website building
