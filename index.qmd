@@ -39,27 +39,6 @@ Group Number: J-023<br>
 Topic: Dygraphs
 
 ---
-<div id="graphdiv" style="width: 600px; height: 300px;"></div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var data = "Date,Value\n" +
-               "2023-01-01,10\n" +
-               "2023-01-02,20\n" +
-               "2023-01-03,15\n" +
-               "2023-01-04,25\n";
-    
-    new Dygraph(document.getElementById("graphdiv"), data, {
-      title: 'Sample Dygraph',
-      xlabel: 'Date',
-      ylabel: 'Value',
-      labelsSeparateLines: true,
-      legend: 'always'
-    });
-  });
-</script>
-
----
 
 # Introduction {#introduction}
 
