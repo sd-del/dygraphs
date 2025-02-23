@@ -25,7 +25,7 @@
     "href": "index.html#including-dygraphs",
     "title": "dygraphs blog",
     "section": "Including dygraphs",
-    "text": "Including dygraphs\nThere are multiple ways to include dygraphs in your project.\n\nUsing a Content Delivery Network\n\n\nInstalling via npm\nnpm install dygraphs"
+    "text": "Including dygraphs\nThere are multiple ways to include dygraphs in your project.\n\nUsing a Content Delivery Network (CDN)\nA content delivery network (CDN) is a network of disributed servers that deliver web content (e.g., JavaScript, CSS etc.) from servers closest to the users, improving load speed and performance. CDNs help handle high traffic efficiently. UNPKG is a CDN that hosts dygraphs.\n\n\n\n\nInstalling via npm\nnpm install dygraphs"
   },
   {
     "objectID": "index.html#dygraphs",
