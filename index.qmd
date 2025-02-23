@@ -24,6 +24,18 @@ Dygraphs is an open-source Javascript charting library that is designed for inte
 
 # Installation and Setup {#installation-and-setup}
 
+Dygraphs is easy to use and requires minimal setup. 
+
+### Including dygraphs
+
+There are multiple ways to include dygraphs in your project
+
+#### Using a Content Delivery Network
+
+#### Installing via npm
+
+`npm install dygraphs`
+
 ---
 
 # Key Features and Explanation {#key-features}
