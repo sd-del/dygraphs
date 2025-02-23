@@ -55,6 +55,10 @@ Then, import it into your JavaScript file.
 import Dygraph from "dygraphs";
 ```
 
+## Creating a basic chart
+
+### Basic HTML Example
+
 ---
 
 # Key Features and Explanation {#key-features}
