@@ -43,8 +43,16 @@ Include this code inside the `<head>` section of a HTML page to use dygraphs.
 
 ### Installing via npm
 
+If you are using a JavaScript framework, install Dygraphs using npm.
+
 ```sh
 npm install dygraphs
+```
+
+Then, import it into your JavaScript file.
+
+```js
+import Dygraph from "dygraphs";
 ```
 
 ---
