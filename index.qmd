@@ -64,7 +64,7 @@ console.log(typeof Dygraph);
 // Expected output: "function"
 ```
 
-If you are using an HTML file, include this as part of the `<script>` section of the `<body>` section. If you are using a Javascript file, type the command in the file containing the import.
+If you are using an HTML file, include this as part of the `<script>` section of the `<body>` section. If you are using a Javascript file, add this command to the file containing the import.
 
 Once you have included Dygraphs into your project, you can use it directly.
 
