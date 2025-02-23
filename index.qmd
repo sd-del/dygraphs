@@ -1,5 +1,5 @@
 ---
-title: "Dygraph blog"
+title: "Dygraphs blog"
 format: html
 include-before-body: dygraphs.html
 ---
