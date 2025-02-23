@@ -25,6 +25,6 @@
     "href": "index.html",
     "title": "dygraphs blog",
     "section": "",
-    "text": "Group Information\n\nExposition Assignment\nGroup Number: J-023\nMembers: Srihith Dibba (24110356), Soni Poojan Deepak (24110353), Soham Biswas (24110346)\nTopic: dygraphs\n\n\n\n\nIntroduction\n\n\n\nInstallation and Setup\n\n\n\nKey Features and Explanation\n\n\n\nUse Cases\n\n\n\nConclusion\n\n\n\nReferences\n\ndygraphs\nWebsite: Website Documentation: dygraphs\n\n\nWebsite building\nTemplate used: Template Tutorial playlist: Playlist"
+    "text": "Group Information\n\nExposition Assignment\nGroup Number: J-023\nMembers: Srihith Dibba (24110356), Soni Poojan Deepak (24110353), Soham Biswas (24110346)\nTopic: dygraphs\n\n\n\n\nIntroduction\nDygraphs is an open-source Javascript charting library that is designed for interactive visualization of large time-series datasets. It allows for real-time data analysis by enabling users to hover over the graphs and read the data points. Dygraphs supports multiple data series, making it useful for comparing trends over time. It is also useful for applications that require real-time updates, zooming and panning. Additionally, it supports CSV and JSON formats, making it easy to integrate with various data sources.\n\n\n\nInstallation and Setup\n\n\n\nKey Features and Explanation\n\n\n\nUse Cases\n\n\n\nConclusion\n\n\n\nReferences\n\ndygraphs\nWebsite: Website Documentation: dygraphs\n\n\nWebsite building\nTemplate used: Template Tutorial playlist: Playlist"
   }
 ]
