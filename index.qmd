@@ -415,7 +415,7 @@ To illustrate, we have stored the following data in a CSV and JSON file.
 
 ## Real Time Updates
 
-Dygraphs dynamically updates graphs for live data visualization. Dygraphs also provides a dropdown roller that allows users to select a rolling average period, which helps make trends more clearer.
+Dygraphs dynamically updates graphs for live data visualization.
 
 ```{=html}
 <div id = "graph7" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
@@ -434,7 +434,6 @@ Dygraphs dynamically updates graphs for live data visualization. Dygraphs also p
       labels: ['Time', 'Value'],
       colors: ['blue'],
       legend: 'always',
-      showRoller: true
     });
     setInterval(() => {
       let newTime = new Date();  
@@ -442,7 +441,7 @@ Dygraphs dynamically updates graphs for live data visualization. Dygraphs also p
       data.push([newTime, newValue]);  
       if (data.length > 30) data.shift();  
       graph.updateOptions({ file: data });  
-    }, 2000);
+    }, 5000);
   });
 </script>
 ```
