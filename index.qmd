@@ -412,41 +412,40 @@ To illustrate, we have stored the following data in a CSV and JSON file.
 </script>
 ```
 
+
 ## Real Time Updates
 
-<div id="graph" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
+Dygraphs dynamically updates graphs for live data visualization. Dygraphs also provides a dropdown roller that allows users to select a rolling average period, which helps make trends more clearer.
+
+```{=html}
+<div id = "graph7" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function() {
     let data = [];
-    const maxPoints = 100; // Keep only the last 100 points
-
-    function updateGraph() {
-      const now = new Date().toISOString().split('T')[1].slice(0, 8); // Current time (HH:MM:SS)
-      const value = (Math.random() * 100).toFixed(2); // Random value
-
-      data.push([now, parseFloat(value)]);
-      if (data.length > maxPoints) data.shift(); // Remove oldest data
-
-      g.updateOptions({ 'file': data });
+    let startTime = new Date().getTime();
+    for (let i = 30; i >= 0; i--) {
+      data.push([new Date(startTime - i * 2000), Math.random() * 100]);
     }
-
-    // Initialize Dygraph
-    const g = new Dygraph(document.getElementById("graph"), data, {
-      title: 'Real-time Data',
+    let graph = new Dygraph(document.getElementById("graph7"), data, {
+      title: 'Optimized Real-Time Graph',
       xlabel: 'Time',
       ylabel: 'Value',
-      legend: 'always',
+      labels: ['Time', 'Value'],
       colors: ['blue'],
-      drawPoints: true,
-      strokeWidth: 1.5
+      legend: 'always',
+      showRoller: true
     });
-
-    // Update graph every 2 seconds
-    setInterval(updateGraph, 2000);
+    setInterval(() => {
+      let newTime = new Date();  
+      let newValue = Math.random() * 100;  
+      data.push([newTime, newValue]);  
+      if (data.length > 30) data.shift();  
+      graph.updateOptions({ file: data });  
+    }, 2000);
   });
 </script>
-
+```
 
 ---
 
