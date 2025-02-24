@@ -310,26 +310,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <script type="text/javascript" src="https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.js"></script>
 <p><link rel="stylesheet" type="text/css" href="https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.css"></p>
-<div id="graphdiv" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var data = "Date,Series1,Series2\n" +
-               "2025-02-01,100,300\n" +
-               "2025-02-02,200,400\n" +
-               "2025-02-03,150,600\n" +
-               "2025-02-04,250,850\n";
-    
-    new Dygraph(document.getElementById("graphdiv"), data, {
-      title: 'Multiple Series',
-      xlabel: 'Date',
-      ylabel: 'Value',
-      labels: ['Date', 'Series 1', 'Series 2'],
-      colors: ['blue', 'red'],
-      legend: 'always'
-    });
-  });
-</script>
 <hr>
 </section>
 </section>
