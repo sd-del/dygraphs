@@ -412,7 +412,7 @@ To illustrate, we have stored the following data in a CSV and JSON file.
 </script>
 ```
 
-## Real Time Updates
+## Real-Time Updates
 
 Dygraphs dynamically updates graphs for live data visualization.
 
@@ -427,7 +427,7 @@ Dygraphs dynamically updates graphs for live data visualization.
       data.push([new Date(startTime - i * 2000), Math.random() * 100]);
     }
     let graph = new Dygraph(document.getElementById("graph7"), data, {
-      title: 'Real Time Graph',
+      title: 'Real-Time Graph',
       xlabel: 'Time',
       ylabel: 'Value',
       labels: ['Time', 'Value'],
@@ -456,7 +456,7 @@ Dygraphs dynamically updates graphs for live data visualization.
       data.push([new Date(startTime - i * 2000), Math.random() * 100]);
     }
     let graph = new Dygraph(document.getElementById("graph7"), data, {
-      title: 'Real Time Graph',
+      title: 'Real-Time Graph',
       xlabel: 'Time',
       ylabel: 'Value',
       labels: ['Time', 'Value'],
@@ -485,6 +485,18 @@ Some common possible use cases are:
 1. Visualization of financial data
 - Can be used to visualize stock market trends, cryptocurrency price changes or historical financial trends
 - How: Dygraphs allows for addition of multiple data series, which helps compare prices. Zooming and panning helps to analyze trends over time.
+
+2. Real-Time Data Monitoring for Sensors
+- Can be implemented for weather readings, device sensor readings etc.
+- How: Dygraphs supports real-time updates smoothly.
+
+3. Website Traffic and Analytics
+- Can be used for monitoring user engagement, server response times and website visits.
+- How: Dygraphs supports CSV and JSON data sources.
+
+4. Scientific and research data
+- Can be used for astronomical research, climate data analysis etc. 
+- How: Dygraphs works well with large datasets without lag. It can also plot multiple variables in the same graph to analyze trends.
 
 ---
 
