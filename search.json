@@ -67,7 +67,7 @@
     "href": "index.html#adding-annotations",
     "title": "Dygraphs Blog",
     "section": "Adding Annotations",
-    "text": "Adding Annotations"
+    "text": "Adding Annotations\nDygraphs allows user to highlight key data points using annotations.\n&lt;div id=\"graph3\" style=\"width: 800px; height: 400px; margin: auto; display: block;\"&gt;&lt;/div&gt;\n\n&lt;script&gt;\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    var data = \"Date,Temperature\\n\" +\n               \"2025-02-01,22\\n\" +\n               \"2025-02-02,24\\n\" +\n               \"2025-02-03,23\\n\" +\n               \"2025-02-04,25\\n\";\n\n    var graph = new Dygraph(document.getElementById(\"graph3\"), data, {\n      title: 'Using Annotations',\n      xlabel: 'Date',\n      ylabel: 'Temperature (°C)',\n      legend: 'always'\n    });\n\n    graph.setAnnotations([\n      {\n        series: \"Temperature\",\n        x: \"2025-02-02\",\n        shortText: \"T\",\n      }\n    ]);\n  });\n&lt;/script&gt;"
   },
   {
     "objectID": "index.html#dygraphs",
