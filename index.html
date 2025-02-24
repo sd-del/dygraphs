@@ -258,9 +258,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
 <span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
 <span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="graph1" style="width: 800px; height: 400px; margin: auto; display: block;">
+<div id="graph1" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
 
-</div>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     var data = "Date,Value\n" +
@@ -330,6 +329,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     });
   });
 </script>
+</section>
+<section id="adding-annotations" class="level2">
+<h2 class="anchored" data-anchor-id="adding-annotations">Adding Annotations</h2>
+<div id="graph3" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var data = "Date,Temperature\n" +
+               "2025-02-01,22\n" +
+               "2025-02-02,24\n" +
+               "2025-02-03,23\n" +
+               "2025-02-04,25\n";
+
+    var g = new Dygraph(document.getElementById("graph1"), data, {
+      title: 'Annotations Example',
+      xlabel: 'Date',
+      ylabel: 'Temperature (°C)',
+      legend: 'always'
+    });
+
+    g.setAnnotations([
+      {
+        series: "Temperature",
+        x: "2025-02-02",
+        shortText: "H",
+        text: "Heatwave detected"
+      }
+    ]);
+  });
+</script>
+
 <hr>
 </section>
 </section>
