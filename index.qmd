@@ -104,7 +104,6 @@ It is simple to create an interactive line chart with minimal code. Below is an 
 </script>
 ```
 
-```{=html}
 <div id = "graphdiv" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
@@ -123,7 +122,6 @@ It is simple to create an interactive line chart with minimal code. Below is an 
     });
   });
 </script>
-```
 
 Hovering the mouse over the graph gives the x-value and the y-value.
 
