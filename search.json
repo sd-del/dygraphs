@@ -67,7 +67,7 @@
     "href": "index.html#real-time-updates",
     "title": "Dygraphs Blog",
     "section": "Real Time Updates",
-    "text": "Real Time Updates"
+    "text": "Real Time Updates\nDygraphs dynamically updates graphs for live data visualization. Dygraphs also provides a dropdown roller that allows users to select a rolling average period, which helps make trends more clearer."
   },
   {
     "objectID": "index.html#dygraphs",
