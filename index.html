@@ -549,8 +549,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       .catch(error => console.error("Error loading JSON:", error));
   });
 </script>
-<hr>
 </section>
+</section>
+<section id="real-time-updates" class="level2">
+<h2 class="anchored" data-anchor-id="real-time-updates">Real Time Updates</h2>
+<div id="graph" style="width: 800px; height: 400px; margin: auto; display: block;">
+
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let data = [];
+    const maxPoints = 100; // Keep only the last 100 points
+
+    function updateGraph() {
+      const now = new Date().toISOString().split('T')[1].slice(0, 8); // Current time (HH:MM:SS)
+      const value = (Math.random() * 100).toFixed(2); // Random value
+
+      data.push([now, parseFloat(value)]);
+      if (data.length > maxPoints) data.shift(); // Remove oldest data
+
+      g.updateOptions({ 'file': data });
+    }
+
+    // Initialize Dygraph
+    const g = new Dygraph(document.getElementById("graph"), data, {
+      title: 'Real-time Data',
+      xlabel: 'Time',
+      ylabel: 'Value',
+      legend: 'always',
+      colors: ['blue'],
+      drawPoints: true,
+      strokeWidth: 1.5
+    });
+
+    // Update graph every 2 seconds
+    setInterval(updateGraph, 2000);
+  });
+</script>
+<hr>
 </section>
 </section>
 <section id="use-cases" class="level1">
