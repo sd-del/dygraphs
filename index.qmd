@@ -76,22 +76,46 @@ Once you have included Dygraphs into your project, you can use it directly.
 
 # Key Features {#key-features}
 
-```{=html}
-<div id="graphdiv" style="width: 600px; height: 300px;"></div>
+## Basic Line Chart
+
+It is simple to create an interactive line chart with minimal code. Below is an example:
+
+```html
+<div id = "graphdiv" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     var data = "Date,Value\n" +
-               "2023-01-01,10\n" +
-               "2023-01-02,20\n" +
-               "2023-01-03,15\n" +
-               "2023-01-04,25\n";
+               "2025-02-01,100\n" +
+               "2025-02-02,200\n" +
+               "2025-02-03,150\n" +
+               "2025-02-04,250\n";
     
     new Dygraph(document.getElementById("graphdiv"), data, {
-      title: 'Sample Dygraph',
+      title: 'Basic Line Chart',
       xlabel: 'Date',
       ylabel: 'Value',
-      labelsSeparateLines: true,
+      legend: 'always'
+    });
+  });
+</script>
+```
+
+```{=html}
+<div id = "graphdiv" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var data = "Date,Value\n" +
+               "2025-02-01,100\n" +
+               "2025-02-02,200\n" +
+               "2025-02-03,150\n" +
+               "2025-02-04,250\n";
+    
+    new Dygraph(document.getElementById("graphdiv"), data, {
+      title: 'Basic Line Chart',
+      xlabel: 'Date',
+      ylabel: 'Value',
       legend: 'always'
     });
   });
