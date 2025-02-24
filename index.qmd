@@ -134,7 +134,7 @@ Dygraphs makes it easy to zoom and pan across the timeline easily.
 To zoom, drag across the part of the graph you want to look at closer. To pan, hold shift and drag in the direction you want to move in. To reset the graph, double click. The video below illustrates this.
 
 <div style = "text-align: center;">
-  <video style = "max-width: 100%; height: auto;", controls>
+  <video style = "max-width: 100%; height: auto;" controls>
     <source src = "zooming_and_panning.mp4" type = "video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -411,7 +411,6 @@ To illustrate, we have stored the following data in a CSV and JSON file.
   });
 </script>
 ```
-
 
 ## Real Time Updates
 
