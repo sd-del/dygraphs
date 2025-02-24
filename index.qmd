@@ -195,7 +195,7 @@ Dygraphs allows plotting of multiple series on the same graph for easy trend com
 Dygraphs allows user to highlight key data points using annotations.
 
 ```html
-<div id="graph3" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
+<div id = "graph3" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -225,7 +225,7 @@ Dygraphs allows user to highlight key data points using annotations.
 ```
 
 ```{=html}
-<div id="graph3" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
+<div id = "graph3" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -264,9 +264,8 @@ Dygraphs is optimized to handle millions of data points without lag.
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     let data = "Date,Value\n";
-    
-    // Generate 1000 random data points
-    for (let i = 0; i < 10000; i++) {
+
+    for (let i = 0; i < 1000; i++) {
       let date = new Date(2025, 0, i + 1).toISOString().split('T')[0];
       data += `${date},${(Math.random() * 100).toFixed(2)}\n`;
     }
@@ -275,8 +274,8 @@ Dygraphs is optimized to handle millions of data points without lag.
       title: 'Large Dataset',
       xlabel: 'Date',
       ylabel: 'Random Values',
-      legend: 'always'
-      color: 'orange',
+      legend: 'always',
+      colors: ['orange'],
     });
   });
 </script>
@@ -306,6 +305,40 @@ Dygraphs is optimized to handle millions of data points without lag.
 ```
 
 ## Real Time Updates
+
+<div id="graph" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let data = [];
+    const maxPoints = 100; // Keep only the last 100 points
+
+    function updateGraph() {
+      const now = new Date().toISOString().split('T')[1].slice(0, 8); // Current time (HH:MM:SS)
+      const value = (Math.random() * 100).toFixed(2); // Random value
+
+      data.push([now, parseFloat(value)]);
+      if (data.length > maxPoints) data.shift(); // Remove oldest data
+
+      g.updateOptions({ 'file': data });
+    }
+
+    // Initialize Dygraph
+    const g = new Dygraph(document.getElementById("graph"), data, {
+      title: 'Real-time Data',
+      xlabel: 'Time',
+      ylabel: 'Value',
+      legend: 'always',
+      colors: ['blue'],
+      drawPoints: true,
+      strokeWidth: 1.5
+    });
+
+    // Update graph every 2 seconds
+    setInterval(updateGraph, 2000);
+  });
+</script>
+
 
 ## CSV and JSON Support
 
