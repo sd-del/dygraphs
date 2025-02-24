@@ -432,40 +432,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
 </script>
 </section>
-<section id="real-time-updates" class="level2">
-<h2 class="anchored" data-anchor-id="real-time-updates">Real Time Updates</h2>
-<div id="graph" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    let data = [['Time', 'Value'], ['00:00:00', 0]]; 
-    const maxPoints = 100; 
-
-    function updateGraph() {
-      const now = new Date().toLocaleTimeString(); 
-      const value = (Math.random() * 100).toFixed(2); 
-      data.push([now, parseFloat(value)]);
-      if (data.length > maxPoints) data.shift(); 
-
-      g.updateOptions({ 'file': data });
-    }
-
-    let g = new Dygraph(document.getElementById("graph"), data, {
-      title: 'Real-time Data',
-      xlabel: 'Time',
-      ylabel: 'Value',
-      legend: 'always',
-      colors: ['blue'],
-      drawPoints: true,
-      strokeWidth: 1.5
-    });
-
-    setInterval(updateGraph, 2000);
-  });
-</script>
-</section>
 <section id="csv-and-json-support" class="level2">
 <h2 class="anchored" data-anchor-id="csv-and-json-support">CSV and JSON Support</h2>
+<p>Dygraphs can load data from CSV strings or JSON files.</p>
 <hr>
 </section>
 </section>

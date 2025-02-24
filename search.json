@@ -77,18 +77,11 @@
     "text": "Handling Large Datasets\nDygraphs is optimized to handle millions of data points without lag.\n&lt;div id = \"graph4\" style = \"width: 800px; height: 400px; margin: auto; display: block;\"&gt;&lt;/div&gt;\n\n&lt;script&gt;\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    let data = \"Date,Value\\n\";\n\n    for (let i = 0; i &lt; 1000; i++) {\n      let date = new Date(2025, 0, i + 1).toISOString().split('T')[0];\n      data += `${date},${(Math.random() * 100).toFixed(2)}\\n`;\n    }\n\n    new Dygraph(document.getElementById(\"graph4\"), data, {\n      title: 'Large Dataset',\n      xlabel: 'Date',\n      ylabel: 'Random Values',\n      legend: 'always',\n      colors: ['orange'],\n    });\n  });\n&lt;/script&gt;"
   },
   {
-    "objectID": "index.html#real-time-updates",
-    "href": "index.html#real-time-updates",
-    "title": "Dygraphs Blog",
-    "section": "Real Time Updates",
-    "text": "Real Time Updates"
-  },
-  {
     "objectID": "index.html#csv-and-json-support",
     "href": "index.html#csv-and-json-support",
     "title": "Dygraphs Blog",
     "section": "CSV and JSON Support",
-    "text": "CSV and JSON Support"
+    "text": "CSV and JSON Support\nDygraphs can load data from CSV strings or JSON files."
   },
   {
     "objectID": "index.html#dygraphs",
