@@ -308,6 +308,16 @@ Dygraphs is optimized to handle millions of data points without lag.
 
 Dygraphs can load data from CSV strings or JSON files.
 
+To illustrate, we have stored the following data in a CSV and JSON file.
+
+| Date       | Value |
+|------------|-------|
+| 2025-02-01 | 100   |
+| 2025-02-02 | 200   |
+| 2025-02-03 | 150   |
+| 2025-02-04 | 250   |
+| 2025-02-05 | 300   |
+
 ### Loading CSV
 
 ```html
