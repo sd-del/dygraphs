@@ -256,7 +256,7 @@ Dygraphs allows user to highlight key data points using annotations.
 
 ## Handling Large Datasets
 
-Dygraphs is optimized to handle millions of data points without lag.
+Dygraphs is optimized to handle a large number of data points without lag.
 
 ```html
 <div id = "graph4" style = "width: 100%; height: 400px; margin: auto; display: block;"></div>
