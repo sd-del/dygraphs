@@ -42,6 +42,13 @@
     "text": "Verifying Installation\nIn order to confirm whether Dygraphs has been loaded successfully or not, run the following command:\nconsole.log(typeof Dygraph); \n// Expected output: \"function\"\nIf you are using an HTML file, include this as part of the &lt;script&gt; section of the &lt;body&gt; section. If you are using a Javascript file, add this command to the file containing the import.\nOnce you have included Dygraphs into your project, you can use it directly."
   },
   {
+    "objectID": "index.html#basic-line-chart",
+    "href": "index.html#basic-line-chart",
+    "title": "Dygraphs Blog",
+    "section": "Basic Line Chart",
+    "text": "Basic Line Chart\nIt is simple to create an interactive line chart with minimal code. Below is an example:\n&lt;div id = \"graphdiv\" style = \"width: 800px; height: 400px; margin: auto; display: block;\"&gt;&lt;/div&gt;\n\n&lt;script&gt;\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    var data = \"Date,Value\\n\" +\n               \"2025-02-01,100\\n\" +\n               \"2025-02-02,200\\n\" +\n               \"2025-02-03,150\\n\" +\n               \"2025-02-04,250\\n\";\n    \n    new Dygraph(document.getElementById(\"graphdiv\"), data, {\n      title: 'Basic Line Chart',\n      xlabel: 'Date',\n      ylabel: 'Value',\n      legend: 'always'\n    });\n  });\n&lt;/script&gt;"
+  },
+  {
     "objectID": "index.html#dygraphs",
     "href": "index.html#dygraphs",
     "title": "Dygraphs Blog",
