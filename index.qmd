@@ -478,6 +478,14 @@ Dygraphs dynamically updates graphs for live data visualization.
 
 # Use Cases {#use-cases}
 
+Dygraphs is a powerful and lightweight charting library that is best suited for interactive time-series visualizations.
+
+Some common possible use cases are:
+
+1. Visualization of financial data
+- Can be used to visualize stock market trends, cryptocurrency price changes or historical financial trends
+- How: Dygraphs allows for addition of multiple data series, which helps compare prices. Zooming and panning helps to analyze trends over time.
+
 ---
 
 # Conclusion {#conclusion}
