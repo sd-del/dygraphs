@@ -81,16 +81,19 @@ Once you have included Dygraphs into your project, you can use it directly.
 It is simple to create an interactive line chart with minimal code. Below is an example:
 
 ```html
+// Creating div, specifying width and height and ensuring it is centered
 <div id = "graphdiv" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
+    // Defining data to graph
     var data = "Date,Value\n" +
                "2025-02-01,100\n" +
                "2025-02-02,200\n" +
                "2025-02-03,150\n" +
                "2025-02-04,250\n";
-    
+
+    // Creating Dygraph
     new Dygraph(document.getElementById("graphdiv"), data, {
       title: 'Basic Line Chart',
       xlabel: 'Date',
@@ -121,6 +124,14 @@ It is simple to create an interactive line chart with minimal code. Below is an 
   });
 </script>
 ```
+
+Hovering the mouse over the graph gives the x-value and the y-value.
+
+## Zooming and Panning
+
+Dygraphs makes it easy to zoom and pan across the timeline easily.
+
+
 
 ---
 
