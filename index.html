@@ -288,6 +288,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="adding-multiple-data-series" class="level2">
 <h2 class="anchored" data-anchor-id="adding-multiple-data-series">Adding multiple data series</h2>
 <p>Dygraphs allows plotting of multiple series on the same graph for easy trend comparisons.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id </span><span class="op">=</span> <span class="st">"graphdiv"</span><span class="ot"> style </span><span class="op">=</span> <span class="st">"width: 800px; height: 400px; margin: auto; display: block;"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">document</span><span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"DOMContentLoaded"</span><span class="op">,</span> <span class="kw">function</span>() {</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> data <span class="op">=</span> <span class="st">"Date,Series1,Series2</span><span class="sc">\n</span><span class="st">"</span> <span class="op">+</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>               <span class="st">"2025-02-01,100,300</span><span class="sc">\n</span><span class="st">"</span> <span class="op">+</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>               <span class="st">"2025-02-02,200,400</span><span class="sc">\n</span><span class="st">"</span> <span class="op">+</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>               <span class="st">"2025-02-03,150,600</span><span class="sc">\n</span><span class="st">"</span> <span class="op">+</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>               <span class="st">"2025-02-04,250,850</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">new</span> <span class="fu">Dygraph</span>(<span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"graphdiv"</span>)<span class="op">,</span> data<span class="op">,</span> {</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> <span class="st">'Multiple Series'</span><span class="op">,</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>      <span class="dt">xlabel</span><span class="op">:</span> <span class="st">'Date'</span><span class="op">,</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>      <span class="dt">ylabel</span><span class="op">:</span> <span class="st">'Value'</span><span class="op">,</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>      <span class="dt">labels</span><span class="op">:</span> [<span class="st">'Date'</span><span class="op">,</span> <span class="st">'Series 1'</span><span class="op">,</span> <span class="st">'Series 2'</span>]<span class="op">,</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>      <span class="dt">colors</span><span class="op">:</span> [<span class="st">'blue'</span><span class="op">,</span> <span class="st">'red'</span>]<span class="op">,</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>      <span class="dt">legend</span><span class="op">:</span> <span class="st">'always'</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="graphdiv" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
@@ -302,7 +322,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       title: 'Multiple Series',
       xlabel: 'Date',
       ylabel: 'Value',
-      labels: ['Data', 'Series 1', 'Series 2'],
+      labels: ['Date', 'Series 1', 'Series 2'],
       colors: ['blue', 'red'],
       legend: 'always'
     });
