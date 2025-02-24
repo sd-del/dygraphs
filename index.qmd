@@ -318,7 +318,7 @@ Dygraphs can load data from CSV strings or JSON files.
     fetch("data.csv")
       .then(response => response.text())
       .then(csvData => {
-        new Dygraph(document.getElementById("graphCSV"), csvData, {
+        new Dygraph(document.getElementById("graph5"), csvData, {
           title: 'CSV Data Graph',
           xlabel: 'Date',
           ylabel: 'Value',
@@ -338,7 +338,7 @@ Dygraphs can load data from CSV strings or JSON files.
     fetch("data.csv")
       .then(response => response.text())
       .then(csvData => {
-        new Dygraph(document.getElementById("graphCSV"), csvData, {
+        new Dygraph(document.getElementById("graph5"), csvData, {
           title: 'CSV Data Graph',
           xlabel: 'Date',
           ylabel: 'Value',
@@ -346,6 +346,58 @@ Dygraphs can load data from CSV strings or JSON files.
         });
       })
       .catch(error => console.error("Error loading CSV:", error));
+  });
+</script>
+```
+
+### Loading JSON
+
+```html
+<div id = "graph6" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("data.json")
+      .then(response => response.json())
+      .then(jsonData => {
+        let data = "Date,Value\n"; // Convert JSON to CSV format
+        jsonData.forEach(entry => {
+          data += `${entry.Date},${entry.Value}\n`;
+        });
+
+        new Dygraph(document.getElementById("graph6"), data, {
+          title: 'JSON Data Graph',
+          xlabel: 'Date',
+          ylabel: 'Value',
+          legend: 'always'
+        });
+      })
+      .catch(error => console.error("Error loading JSON:", error));
+  });
+</script>
+```
+
+```{=html}
+<div id = "graph6" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("data.json")
+      .then(response => response.json())
+      .then(jsonData => {
+        let data = "Date,Value\n"; // Convert JSON to CSV format
+        jsonData.forEach(entry => {
+          data += `${entry.Date},${entry.Value}\n`;
+        });
+
+        new Dygraph(document.getElementById("graph6"), data, {
+          title: 'JSON Data Graph',
+          xlabel: 'Date',
+          ylabel: 'Value',
+          legend: 'always'
+        });
+      })
+      .catch(error => console.error("Error loading JSON:", error));
   });
 </script>
 ```
