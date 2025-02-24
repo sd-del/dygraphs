@@ -417,9 +417,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     let data = "Date,Value\n";
-    
-    // Generate 1000 random data points
-    for (let i = 0; i < 10000; i++) {
+
+    for (let i = 0; i < 1000; i++) {
       let date = new Date(2025, 0, i + 1).toISOString().split('T')[0];
       data += `${date},${(Math.random() * 100).toFixed(2)}\n`;
     }
