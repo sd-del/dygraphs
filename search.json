@@ -67,7 +67,7 @@
     "href": "index.html#real-time-updates",
     "title": "Dygraphs Blog",
     "section": "Real Time Updates",
-    "text": "Real Time Updates\nDygraphs dynamically updates graphs for live data visualization."
+    "text": "Real Time Updates\nDygraphs dynamically updates graphs for live data visualization.\n&lt;div id = \"graph7\" style = \"width: 100%; height: 400px; margin: auto; display: block;\"&gt;&lt;/div&gt;\n\n&lt;script&gt;\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    let data = [];\n    let startTime = new Date().getTime();\n    for (let i = 30; i &gt;= 0; i--) {\n      data.push([new Date(startTime - i * 2000), Math.random() * 100]);\n    }\n    let graph = new Dygraph(document.getElementById(\"graph7\"), data, {\n      title: 'Optimized Real-Time Graph',\n      xlabel: 'Time',\n      ylabel: 'Value',\n      labels: ['Time', 'Value'],\n      colors: ['blue'],\n      legend: 'always',\n    });\n    setInterval(() =&gt; {\n      let newTime = new Date();  \n      let newValue = Math.random() * 100;  \n      data.push([newTime, newValue]);  \n      if (data.length &gt; 30) data.shift();  \n      graph.updateOptions({ file: data });  \n    }, 2500);\n  });\n&lt;/script&gt;"
   },
   {
     "objectID": "index.html#dygraphs",
