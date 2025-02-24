@@ -564,7 +564,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>      data<span class="op">.</span><span class="fu">push</span>([<span class="kw">new</span> <span class="bu">Date</span>(startTime <span class="op">-</span> i <span class="op">*</span> <span class="dv">2000</span>)<span class="op">,</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>() <span class="op">*</span> <span class="dv">100</span>])<span class="op">;</span></span>
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> graph <span class="op">=</span> <span class="kw">new</span> <span class="fu">Dygraph</span>(<span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"graph7"</span>)<span class="op">,</span> data<span class="op">,</span> {</span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> <span class="st">'Optimized Real-Time Graph'</span><span class="op">,</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> <span class="st">'Real Time Graph'</span><span class="op">,</span></span>
 <span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>      <span class="dt">xlabel</span><span class="op">:</span> <span class="st">'Time'</span><span class="op">,</span></span>
 <span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>      <span class="dt">ylabel</span><span class="op">:</span> <span class="st">'Value'</span><span class="op">,</span></span>
 <span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>      <span class="dt">labels</span><span class="op">:</span> [<span class="st">'Time'</span><span class="op">,</span> <span class="st">'Value'</span>]<span class="op">,</span></span>
@@ -590,7 +590,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       data.push([new Date(startTime - i * 2000), Math.random() * 100]);
     }
     let graph = new Dygraph(document.getElementById("graph7"), data, {
-      title: 'Optimized Real-Time Graph',
+      title: 'Real Time Graph',
       xlabel: 'Time',
       ylabel: 'Value',
       labels: ['Time', 'Value'],
