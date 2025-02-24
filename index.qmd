@@ -308,6 +308,48 @@ Dygraphs is optimized to handle millions of data points without lag.
 
 Dygraphs can load data from CSV strings or JSON files.
 
+### Loading CSV
+
+```html
+<div id = "graph5" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("data.csv")
+      .then(response => response.text())
+      .then(csvData => {
+        new Dygraph(document.getElementById("graphCSV"), csvData, {
+          title: 'CSV Data Graph',
+          xlabel: 'Date',
+          ylabel: 'Value',
+          legend: 'always'
+        });
+      })
+      .catch(error => console.error("Error loading CSV:", error));
+  });
+</script>
+```
+
+```{=html}
+<div id = "graph5" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch("data.csv")
+      .then(response => response.text())
+      .then(csvData => {
+        new Dygraph(document.getElementById("graphCSV"), csvData, {
+          title: 'CSV Data Graph',
+          xlabel: 'Date',
+          ylabel: 'Value',
+          legend: 'always'
+        });
+      })
+      .catch(error => console.error("Error loading CSV:", error));
+  });
+</script>
+```
+
 ---
 
 # Use Cases {#use-cases}
