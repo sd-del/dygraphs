@@ -82,7 +82,7 @@ It is simple to create an interactive line chart with minimal code. Below is an 
 
 ```html
 <!-- Creating div, specifying width and height and ensuring it is centered -->
-<div id = "graphdiv" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
+<div id = "graph1" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -94,7 +94,7 @@ It is simple to create an interactive line chart with minimal code. Below is an 
                "2025-02-04,250\n";
 
     // Creating Dygraph
-    new Dygraph(document.getElementById("graphdiv"), data, {
+    new Dygraph(document.getElementById("graph1"), data, {
       title: 'Basic Line Chart',
       xlabel: 'Date',
       ylabel: 'Value',
@@ -104,7 +104,7 @@ It is simple to create an interactive line chart with minimal code. Below is an 
 </script>
 ```
 
-<div id = "graphdiv" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
+<div id = "graph1" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -114,7 +114,7 @@ It is simple to create an interactive line chart with minimal code. Below is an 
                "2025-02-03,150\n" +
                "2025-02-04,250\n";
     
-    new Dygraph(document.getElementById("graphdiv"), data, {
+    new Dygraph(document.getElementById("graph1"), data, {
       title: 'Basic Line Chart',
       xlabel: 'Date',
       ylabel: 'Value',
@@ -129,6 +129,8 @@ Hovering the mouse over the graph gives the x-value and the y-value.
 
 Dygraphs makes it easy to zoom and pan across the timeline easily.
 
+To zoom, drag across the part of the graph you want to look at closer. To pan, hold shift and drag in the direction you want to move in. To reset the graph, double click. The video below illustrates this.
+
 <div style = "text-align: center;">
   <video width = "720" height = "400" controls>
     <source src = "zooming_and_panning.mp4" type = "video/mp4">
@@ -141,7 +143,7 @@ Dygraphs makes it easy to zoom and pan across the timeline easily.
 Dygraphs allows plotting of multiple series on the same graph for easy trend comparisons.
 
 ```html
-<div id = "graphdiv" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
+<div id = "graph2" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -151,7 +153,7 @@ Dygraphs allows plotting of multiple series on the same graph for easy trend com
                "2025-02-03,150,600\n" +
                "2025-02-04,250,850\n";
     
-    new Dygraph(document.getElementById("graphdiv"), data, {
+    new Dygraph(document.getElementById("graph2"), data, {
       title: 'Multiple Series',
       xlabel: 'Date',
       ylabel: 'Value',
@@ -163,7 +165,8 @@ Dygraphs allows plotting of multiple series on the same graph for easy trend com
 </script>
 ```
 
-<div id = "graphdiv" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
+```{=html}
+<div id = "graph2" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -173,7 +176,7 @@ Dygraphs allows plotting of multiple series on the same graph for easy trend com
                "2025-02-03,150,600\n" +
                "2025-02-04,250,850\n";
     
-    new Dygraph(document.getElementById("graphdiv"), data, {
+    new Dygraph(document.getElementById("graph2"), data, {
       title: 'Multiple Series',
       xlabel: 'Date',
       ylabel: 'Value',
@@ -183,6 +186,7 @@ Dygraphs allows plotting of multiple series on the same graph for easy trend com
     });
   });
 </script>
+```
 
 ---
 
