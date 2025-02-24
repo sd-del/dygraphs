@@ -249,7 +249,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>               <span class="st">"2025-02-03,150</span><span class="sc">\n</span><span class="st">"</span> <span class="op">+</span></span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>               <span class="st">"2025-02-04,250</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Creating Dygraph</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Creating Dygraph element</span></span>
 <span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">new</span> <span class="fu">Dygraph</span>(<span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"graph1"</span>)<span class="op">,</span> data<span class="op">,</span> {</span>
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> <span class="st">'Basic Line Chart'</span><span class="op">,</span></span>
 <span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>      <span class="dt">xlabel</span><span class="op">:</span> <span class="st">'Date'</span><span class="op">,</span></span>
@@ -258,16 +258,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
 <span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
 <span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- Creating div, specifying width and height and ensuring it is centered -->
 <div id="graph1" style="width: 100%; height: 400px; margin: auto; display: block;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
+    // Defining data to graph
     var data = "Date,Value\n" +
                "2025-02-01,100\n" +
                "2025-02-02,200\n" +
                "2025-02-03,150\n" +
                "2025-02-04,250\n";
-    
+
+    // Creating Dygraph element
     new Dygraph(document.getElementById("graph1"), data, {
       title: 'Basic Line Chart',
       xlabel: 'Date',
