@@ -210,8 +210,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="using-a-content-delivery-network-cdn" class="level3">
 <h3 class="anchored" data-anchor-id="using-a-content-delivery-network-cdn">Using a Content Delivery Network (CDN)</h3>
 <p>A content delivery network (CDN) is a network of distributed servers that deliver web content (e.g., JavaScript, CSS etc.) from the closest servers to users, improving load speed and performance. CDNs help handle high traffic efficiently. <a href="https://unpkg.com">UNPKG</a> is a CDN that hosts dygraphs.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> type=</span><span class="st">"text/javascript"</span><span class="ot"> src</span><span class="op">=</span><span class="st">"https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.js"</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">link</span><span class="ot"> rel</span><span class="op">=</span><span class="st">"stylesheet"</span><span class="ot"> type</span><span class="op">=</span><span class="st">"text/css"</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.css"</span><span class="ot"> </span><span class="dt">/&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> type</span> <span class="ot">=</span> <span class="st">"text/javascript"</span><span class="ot"> src </span><span class="op">=</span> <span class="st">"https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.js"</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">link</span><span class="ot"> rel </span><span class="op">=</span> <span class="st">"stylesheet"</span><span class="ot"> type </span><span class="op">=</span> <span class="st">"text/css"</span><span class="ot"> href </span><span class="op">=</span> <span class="st">"https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.css"</span><span class="ot"> </span><span class="dt">/&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Include this code inside the <code>&lt;head&gt;</code> section of an HTML page to use Dygraphs.</p>
 </section>
 <section id="installing-via-npm" class="level3">
@@ -288,21 +288,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="adding-multiple-data-series" class="level2">
 <h2 class="anchored" data-anchor-id="adding-multiple-data-series">Adding multiple data series</h2>
 <p>Dygraphs allows plotting of multiple series on the same graph for easy trend comparisons.</p>
-<div id="graphdiv" style="width: 800px; height: 400px; margin: auto; display: block;">
+<div id="graphdiv" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
 
-</div>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    var data = "Date,Value\n" +
-               "2025-02-01,100\n" +
-               "2025-02-02,200\n" +
-               "2025-02-03,150\n" +
-               "2025-02-04,250\n";
+    var data = "Date,Series1,Series2\n" +
+               "2025-02-01,100,300\n" +
+               "2025-02-02,200,400\n" +
+               "2025-02-03,150,600\n" +
+               "2025-02-04,250,850\n";
     
     new Dygraph(document.getElementById("graphdiv"), data, {
-      title: 'Basic Line Chart',
+      title: 'Multiple Series',
       xlabel: 'Date',
       ylabel: 'Value',
+      labels: ['Data', 'Series 1', 'Series 2'],
+      colors: ['blue', 'red'],
       legend: 'always'
     });
   });
