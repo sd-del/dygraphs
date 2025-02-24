@@ -131,6 +131,12 @@ Hovering the mouse over the graph gives the x-value and the y-value.
 
 Dygraphs makes it easy to zoom and pan across the timeline easily.
 
+<div style = "text-align: center;">
+  <video width = "720" height = "400" controls>
+    <source src = "zooming_and_panning.mp4" type = "video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 
 ---
