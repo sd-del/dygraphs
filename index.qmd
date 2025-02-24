@@ -82,7 +82,7 @@ It is simple to create an interactive line chart with minimal code. Below is an 
 
 ```html
 <!-- Creating div, specifying width and height and ensuring it is centered -->
-<div id = "graph1" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
+<div id = "graph1" style = "width: 100%; height: 400px; margin: auto; display: block;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
