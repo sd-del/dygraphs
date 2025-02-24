@@ -238,7 +238,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="basic-line-chart">Basic Line Chart</h2>
 <p>It is simple to create an interactive line chart with minimal code. Below is an example:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- Creating div, specifying width and height and ensuring it is centered --&gt;</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id </span><span class="op">=</span> <span class="st">"graphdiv"</span><span class="ot"> style </span><span class="op">=</span> <span class="st">"width: 800px; height: 400px; margin: auto; display: block;"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id </span><span class="op">=</span> <span class="st">"graph1"</span><span class="ot"> style </span><span class="op">=</span> <span class="st">"width: 800px; height: 400px; margin: auto; display: block;"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">document</span><span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"DOMContentLoaded"</span><span class="op">,</span> <span class="kw">function</span>() {</span>
@@ -250,7 +250,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>               <span class="st">"2025-02-04,250</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Creating Dygraph</span></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">new</span> <span class="fu">Dygraph</span>(<span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"graphdiv"</span>)<span class="op">,</span> data<span class="op">,</span> {</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">new</span> <span class="fu">Dygraph</span>(<span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"graph1"</span>)<span class="op">,</span> data<span class="op">,</span> {</span>
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> <span class="st">'Basic Line Chart'</span><span class="op">,</span></span>
 <span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>      <span class="dt">xlabel</span><span class="op">:</span> <span class="st">'Date'</span><span class="op">,</span></span>
 <span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>      <span class="dt">ylabel</span><span class="op">:</span> <span class="st">'Value'</span><span class="op">,</span></span>
@@ -258,7 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
 <span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
 <span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="graphdiv" style="width: 800px; height: 400px; margin: auto; display: block;">
+<div id="graph1" style="width: 800px; height: 400px; margin: auto; display: block;">
 
 </div>
 <script>
@@ -269,7 +269,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
                "2025-02-03,150\n" +
                "2025-02-04,250\n";
     
-    new Dygraph(document.getElementById("graphdiv"), data, {
+    new Dygraph(document.getElementById("graph1"), data, {
       title: 'Basic Line Chart',
       xlabel: 'Date',
       ylabel: 'Value',
@@ -282,6 +282,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="zooming-and-panning" class="level2">
 <h2 class="anchored" data-anchor-id="zooming-and-panning">Zooming and Panning</h2>
 <p>Dygraphs makes it easy to zoom and pan across the timeline easily.</p>
+<p>To zoom, drag across the part of the graph you want to look at closer. To pan, hold shift and drag in the direction you want to move in. To reset the graph, double click. The video below illustrates this.</p>
 <div style="text-align: center;">
 <p><video width="720" height="400" controls=""> <source src="zooming_and_panning.mp4" type="video/mp4"> Your browser does not support the video tag. </video></p>
 </div>
@@ -289,7 +290,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="adding-multiple-data-series" class="level2">
 <h2 class="anchored" data-anchor-id="adding-multiple-data-series">Adding multiple data series</h2>
 <p>Dygraphs allows plotting of multiple series on the same graph for easy trend comparisons.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id </span><span class="op">=</span> <span class="st">"graphdiv"</span><span class="ot"> style </span><span class="op">=</span> <span class="st">"width: 800px; height: 400px; margin: auto; display: block;"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<div class="sourceCode" id="cb6"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id </span><span class="op">=</span> <span class="st">"graph2"</span><span class="ot"> style </span><span class="op">=</span> <span class="st">"width: 800px; height: 400px; margin: auto; display: block;"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">document</span><span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"DOMContentLoaded"</span><span class="op">,</span> <span class="kw">function</span>() {</span>
@@ -299,7 +300,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>               <span class="st">"2025-02-03,150,600</span><span class="sc">\n</span><span class="st">"</span> <span class="op">+</span></span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>               <span class="st">"2025-02-04,250,850</span><span class="sc">\n</span><span class="st">"</span><span class="op">;</span></span>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">new</span> <span class="fu">Dygraph</span>(<span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"graphdiv"</span>)<span class="op">,</span> data<span class="op">,</span> {</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">new</span> <span class="fu">Dygraph</span>(<span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"graph2"</span>)<span class="op">,</span> data<span class="op">,</span> {</span>
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> <span class="st">'Multiple Series'</span><span class="op">,</span></span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>      <span class="dt">xlabel</span><span class="op">:</span> <span class="st">'Date'</span><span class="op">,</span></span>
 <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>      <span class="dt">ylabel</span><span class="op">:</span> <span class="st">'Value'</span><span class="op">,</span></span>
@@ -309,9 +310,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
 <span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
 <span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="graphdiv" style="width: 800px; height: 400px; margin: auto; display: block;">
+<div id="graph2" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
 
-</div>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     var data = "Date,Series1,Series2\n" +
@@ -320,7 +320,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
                "2025-02-03,150,600\n" +
                "2025-02-04,250,850\n";
     
-    new Dygraph(document.getElementById("graphdiv"), data, {
+    new Dygraph(document.getElementById("graph2"), data, {
       title: 'Multiple Series',
       xlabel: 'Date',
       ylabel: 'Value',

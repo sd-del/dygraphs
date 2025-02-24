@@ -46,21 +46,21 @@
     "href": "index.html#basic-line-chart",
     "title": "Dygraphs Blog",
     "section": "Basic Line Chart",
-    "text": "Basic Line Chart\nIt is simple to create an interactive line chart with minimal code. Below is an example:\n&lt;!-- Creating div, specifying width and height and ensuring it is centered --&gt;\n&lt;div id = \"graphdiv\" style = \"width: 800px; height: 400px; margin: auto; display: block;\"&gt;&lt;/div&gt;\n\n&lt;script&gt;\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    // Defining data to graph\n    var data = \"Date,Value\\n\" +\n               \"2025-02-01,100\\n\" +\n               \"2025-02-02,200\\n\" +\n               \"2025-02-03,150\\n\" +\n               \"2025-02-04,250\\n\";\n\n    // Creating Dygraph\n    new Dygraph(document.getElementById(\"graphdiv\"), data, {\n      title: 'Basic Line Chart',\n      xlabel: 'Date',\n      ylabel: 'Value',\n      legend: 'always'\n    });\n  });\n&lt;/script&gt;\n\n\n\n\nHovering the mouse over the graph gives the x-value and the y-value."
+    "text": "Basic Line Chart\nIt is simple to create an interactive line chart with minimal code. Below is an example:\n&lt;!-- Creating div, specifying width and height and ensuring it is centered --&gt;\n&lt;div id = \"graph1\" style = \"width: 800px; height: 400px; margin: auto; display: block;\"&gt;&lt;/div&gt;\n\n&lt;script&gt;\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    // Defining data to graph\n    var data = \"Date,Value\\n\" +\n               \"2025-02-01,100\\n\" +\n               \"2025-02-02,200\\n\" +\n               \"2025-02-03,150\\n\" +\n               \"2025-02-04,250\\n\";\n\n    // Creating Dygraph\n    new Dygraph(document.getElementById(\"graph1\"), data, {\n      title: 'Basic Line Chart',\n      xlabel: 'Date',\n      ylabel: 'Value',\n      legend: 'always'\n    });\n  });\n&lt;/script&gt;\n\n\n\n\nHovering the mouse over the graph gives the x-value and the y-value."
   },
   {
     "objectID": "index.html#zooming-and-panning",
     "href": "index.html#zooming-and-panning",
     "title": "Dygraphs Blog",
     "section": "Zooming and Panning",
-    "text": "Zooming and Panning\nDygraphs makes it easy to zoom and pan across the timeline easily.\n\n  Your browser does not support the video tag."
+    "text": "Zooming and Panning\nDygraphs makes it easy to zoom and pan across the timeline easily.\nTo zoom, drag across the part of the graph you want to look at closer. To pan, hold shift and drag in the direction you want to move in. To reset the graph, double click. The video below illustrates this.\n\n  Your browser does not support the video tag."
   },
   {
     "objectID": "index.html#adding-multiple-data-series",
     "href": "index.html#adding-multiple-data-series",
     "title": "Dygraphs Blog",
     "section": "Adding multiple data series",
-    "text": "Adding multiple data series\nDygraphs allows plotting of multiple series on the same graph for easy trend comparisons.\n&lt;div id = \"graphdiv\" style = \"width: 800px; height: 400px; margin: auto; display: block;\"&gt;&lt;/div&gt;\n\n&lt;script&gt;\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    var data = \"Date,Series1,Series2\\n\" +\n               \"2025-02-01,100,300\\n\" +\n               \"2025-02-02,200,400\\n\" +\n               \"2025-02-03,150,600\\n\" +\n               \"2025-02-04,250,850\\n\";\n    \n    new Dygraph(document.getElementById(\"graphdiv\"), data, {\n      title: 'Multiple Series',\n      xlabel: 'Date',\n      ylabel: 'Value',\n      labels: ['Date', 'Series 1', 'Series 2'],\n      colors: ['blue', 'red'],\n      legend: 'always'\n    });\n  });\n&lt;/script&gt;"
+    "text": "Adding multiple data series\nDygraphs allows plotting of multiple series on the same graph for easy trend comparisons.\n&lt;div id = \"graph2\" style = \"width: 800px; height: 400px; margin: auto; display: block;\"&gt;&lt;/div&gt;\n\n&lt;script&gt;\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    var data = \"Date,Series1,Series2\\n\" +\n               \"2025-02-01,100,300\\n\" +\n               \"2025-02-02,200,400\\n\" +\n               \"2025-02-03,150,600\\n\" +\n               \"2025-02-04,250,850\\n\";\n    \n    new Dygraph(document.getElementById(\"graph2\"), data, {\n      title: 'Multiple Series',\n      xlabel: 'Date',\n      ylabel: 'Value',\n      labels: ['Date', 'Series 1', 'Series 2'],\n      colors: ['blue', 'red'],\n      legend: 'always'\n    });\n  });\n&lt;/script&gt;"
   },
   {
     "objectID": "index.html#dygraphs",
