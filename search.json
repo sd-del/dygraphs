@@ -32,7 +32,7 @@
     "href": "index.html#zooming-and-panning",
     "title": "Dygraphs Blog",
     "section": "Zooming and Panning",
-    "text": "Zooming and Panning\nDygraphs makes it easy to zoom and pan across the timeline easily.\nTo zoom, drag across the part of the graph you want to look at closer. To pan, hold shift and drag in the direction you want to move in. To reset the graph, double click. The video below illustrates this.\n\n&lt;video style = “max-width: 100%; height: auto;”, controls&gt;  Your browser does not support the video tag."
+    "text": "Zooming and Panning\nDygraphs makes it easy to zoom and pan across the timeline easily.\nTo zoom, drag across the part of the graph you want to look at closer. To pan, hold shift and drag in the direction you want to move in. To reset the graph, double click. The video below illustrates this.\n\n  Your browser does not support the video tag."
   },
   {
     "objectID": "index.html#adding-multiple-data-series",
