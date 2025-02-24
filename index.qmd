@@ -104,6 +104,7 @@ It is simple to create an interactive line chart with minimal code. Below is an 
 </script>
 ```
 
+```{=html}
 <div id = "graph1" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
@@ -122,6 +123,7 @@ It is simple to create an interactive line chart with minimal code. Below is an 
     });
   });
 </script>
+```
 
 Hovering the mouse over the graph gives the x-value and the y-value.
 
@@ -186,6 +188,39 @@ Dygraphs allows plotting of multiple series on the same graph for easy trend com
     });
   });
 </script>
+```
+
+## Adding Annotations
+
+```{=html}
+<div id="graph3" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var data = "Date,Temperature\n" +
+               "2025-02-01,22\n" +
+               "2025-02-02,24\n" +
+               "2025-02-03,23\n" +
+               "2025-02-04,25\n";
+
+    var g = new Dygraph(document.getElementById("graph1"), data, {
+      title: 'Annotations Example',
+      xlabel: 'Date',
+      ylabel: 'Temperature (°C)',
+      legend: 'always'
+    });
+
+    g.setAnnotations([
+      {
+        series: "Temperature",
+        x: "2025-02-02",
+        shortText: "H",
+        text: "Heatwave detected"
+      }
+    ]);
+  });
+</script>
+
 ```
 
 ---
