@@ -441,7 +441,7 @@ Dygraphs dynamically updates graphs for live data visualization.
       data.push([newTime, newValue]);  
       if (data.length > 30) data.shift();  
       graph.updateOptions({ file: data });  
-    }, 5000);
+    }, 2500);
   });
 </script>
 ```
