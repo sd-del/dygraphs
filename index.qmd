@@ -39,8 +39,8 @@ There are multiple ways to include Dygraphs in your project.
 A content delivery network (CDN) is a network of distributed servers that deliver web content (e.g., JavaScript, CSS etc.) from the closest servers to users, improving load speed and performance. CDNs help handle high traffic efficiently. [UNPKG](https://unpkg.com) is a CDN that hosts dygraphs.
 
 ```html
-<script type="text/javascript" src="https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.css" />
+<script type = "text/javascript" src = "https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "https://unpkg.com/dygraphs@2.2.1/dist/dygraph.min.css" />
 ```
 
 Include this code inside the `<head>` section of an HTML page to use Dygraphs.
@@ -142,24 +142,28 @@ Dygraphs makes it easy to zoom and pan across the timeline easily.
 
 Dygraphs allows plotting of multiple series on the same graph for easy trend comparisons.
 
+```{=html}
 <div id = "graphdiv" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    var data = "Date,Value\n" +
-               "2025-02-01,100\n" +
-               "2025-02-02,200\n" +
-               "2025-02-03,150\n" +
-               "2025-02-04,250\n";
+    var data = "Date,Series1,Series2\n" +
+               "2025-02-01,100,300\n" +
+               "2025-02-02,200,400\n" +
+               "2025-02-03,150,600\n" +
+               "2025-02-04,250,850\n";
     
     new Dygraph(document.getElementById("graphdiv"), data, {
-      title: 'Basic Line Chart',
+      title: 'Multiple Series',
       xlabel: 'Date',
       ylabel: 'Value',
+      labels: ['Data', 'Series 1', 'Series 2'],
+      colors: ['blue', 'red'],
       legend: 'always'
     });
   });
 </script>
+```
 
 ---
 
