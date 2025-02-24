@@ -306,25 +306,24 @@ Dygraphs is optimized to handle millions of data points without lag.
 
 ## Real Time Updates
 
-<div id="graph" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
+```{=html}
+<div id = "graph" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    let data = [];
-    const maxPoints = 100; // Keep only the last 100 points
+    let data = [['Time', 'Value'], ['00:00:00', 0]]; 
+    const maxPoints = 100; 
 
     function updateGraph() {
-      const now = new Date().toISOString().split('T')[1].slice(0, 8); // Current time (HH:MM:SS)
-      const value = (Math.random() * 100).toFixed(2); // Random value
-
+      const now = new Date().toLocaleTimeString(); 
+      const value = (Math.random() * 100).toFixed(2); 
       data.push([now, parseFloat(value)]);
-      if (data.length > maxPoints) data.shift(); // Remove oldest data
+      if (data.length > maxPoints) data.shift(); 
 
       g.updateOptions({ 'file': data });
     }
 
-    // Initialize Dygraph
-    const g = new Dygraph(document.getElementById("graph"), data, {
+    let g = new Dygraph(document.getElementById("graph"), data, {
       title: 'Real-time Data',
       xlabel: 'Time',
       ylabel: 'Value',
@@ -334,10 +333,10 @@ Dygraphs is optimized to handle millions of data points without lag.
       strokeWidth: 1.5
     });
 
-    // Update graph every 2 seconds
     setInterval(updateGraph, 2000);
   });
 </script>
+```
 
 
 ## CSV and JSON Support
