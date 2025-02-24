@@ -216,7 +216,6 @@ Dygraphs allows user to highlight key data points using annotations.
       {
         series: "Temperature",
         x: "2025-02-02",
-        shortText: "T",
       }
     ]);
   });
@@ -245,7 +244,6 @@ Dygraphs allows user to highlight key data points using annotations.
       {
         series: "Temperature",
         x: "2025-02-02",
-        shortText: "T",
       }
     ]);
   });
