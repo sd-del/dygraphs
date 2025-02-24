@@ -74,7 +74,7 @@ Once you have included Dygraphs into your project, you can use it directly.
 
 ---
 
-# Key Features {#key-features}
+# Key Features and Code Examples {#key-features}
 
 ## Basic Line Chart
 
