@@ -315,7 +315,7 @@ Dygraphs can load data from CSV strings or JSON files.
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    fetch("data.csv")
+    fetch("https://raw.githubusercontent.com/sd-del/dygraphs/master/data.csv")
       .then(response => response.text())
       .then(csvData => {
         new Dygraph(document.getElementById("graph5"), csvData, {
@@ -335,7 +335,7 @@ Dygraphs can load data from CSV strings or JSON files.
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    fetch("data.csv")
+    fetch("https://raw.githubusercontent.com/sd-del/dygraphs/master/data.csv")
       .then(response => response.text())
       .then(csvData => {
         new Dygraph(document.getElementById("graph5"), csvData, {
@@ -357,7 +357,7 @@ Dygraphs can load data from CSV strings or JSON files.
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    fetch("data.json")
+    fetch("https://raw.githubusercontent.com/sd-del/dygraphs/master/data.json")
       .then(response => response.json())
       .then(jsonData => {
         let data = "Date,Value\n"; // Convert JSON to CSV format
@@ -382,7 +382,7 @@ Dygraphs can load data from CSV strings or JSON files.
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    fetch("data.json")
+    fetch("https://raw.githubusercontent.com/sd-del/dygraphs/master/data.json")
       .then(response => response.json())
       .then(jsonData => {
         let data = "Date,Value\n"; // Convert JSON to CSV format
