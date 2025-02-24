@@ -237,7 +237,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="basic-line-chart" class="level2">
 <h2 class="anchored" data-anchor-id="basic-line-chart">Basic Line Chart</h2>
 <p>It is simple to create an interactive line chart with minimal code. Below is an example:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>// Creating div, specifying width and height and ensuring it is centered</span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- Creating div, specifying width and height and ensuring it is centered --&gt;</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id </span><span class="op">=</span> <span class="st">"graphdiv"</span><span class="ot"> style </span><span class="op">=</span> <span class="st">"width: 800px; height: 400px; margin: auto; display: block;"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
@@ -284,6 +284,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div style="text-align: center;">
 <p><video width="720" height="400" controls=""> <source src="zooming_and_panning.mp4" type="video/mp4"> Your browser does not support the video tag. </video></p>
 </div>
+</section>
+<section id="adding-multiple-data-series" class="level2">
+<h2 class="anchored" data-anchor-id="adding-multiple-data-series">Adding multiple data series</h2>
+<p>Dygraphs allows plotting of multiple series on the same graph for easy trend comparisons.</p>
+<div id="graphdiv" style="width: 800px; height: 400px; margin: auto; display: block;">
+
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var data = "Date,Value\n" +
+               "2025-02-01,100\n" +
+               "2025-02-02,200\n" +
+               "2025-02-03,150\n" +
+               "2025-02-04,250\n";
+    
+    new Dygraph(document.getElementById("graphdiv"), data, {
+      title: 'Basic Line Chart',
+      xlabel: 'Date',
+      ylabel: 'Value',
+      legend: 'always'
+    });
+  });
+</script>
 <hr>
 </section>
 </section>
