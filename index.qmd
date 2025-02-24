@@ -192,6 +192,37 @@ Dygraphs allows plotting of multiple series on the same graph for easy trend com
 
 ## Adding Annotations
 
+Dygraphs allows user to highlight key data points using annotations.
+
+```html
+<div id="graph3" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var data = "Date,Temperature\n" +
+               "2025-02-01,22\n" +
+               "2025-02-02,24\n" +
+               "2025-02-03,23\n" +
+               "2025-02-04,25\n";
+
+    var graph = new Dygraph(document.getElementById("graph3"), data, {
+      title: 'Using Annotations',
+      xlabel: 'Date',
+      ylabel: 'Temperature (°C)',
+      legend: 'always'
+    });
+
+    graph.setAnnotations([
+      {
+        series: "Temperature",
+        x: "2025-02-02",
+        shortText: "T",
+      }
+    ]);
+  });
+</script>
+```
+
 ```{=html}
 <div id="graph3" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
 
@@ -203,24 +234,22 @@ Dygraphs allows plotting of multiple series on the same graph for easy trend com
                "2025-02-03,23\n" +
                "2025-02-04,25\n";
 
-    var g = new Dygraph(document.getElementById("graph1"), data, {
-      title: 'Annotations Example',
+    var graph = new Dygraph(document.getElementById("graph3"), data, {
+      title: 'Using Annotations',
       xlabel: 'Date',
       ylabel: 'Temperature (°C)',
       legend: 'always'
     });
 
-    g.setAnnotations([
+    graph.setAnnotations([
       {
         series: "Temperature",
         x: "2025-02-02",
-        shortText: "H",
-        text: "Heatwave detected"
+        shortText: "T",
       }
     ]);
   });
 </script>
-
 ```
 
 ---
