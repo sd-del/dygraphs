@@ -553,7 +553,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="real-time-updates" class="level2">
 <h2 class="anchored" data-anchor-id="real-time-updates">Real Time Updates</h2>
-<p>Dygraphs dynamically updates graphs for live data visualization. Dygraphs also provides a dropdown roller that allows users to select a rolling average period, which helps make trends more clearer.</p>
+<p>Dygraphs dynamically updates graphs for live data visualization.</p>
 <div id="graph7" style="width: 800px; height: 400px; margin: auto; display: block;"></div>
 
 <script>
@@ -570,7 +570,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       labels: ['Time', 'Value'],
       colors: ['blue'],
       legend: 'always',
-      showRoller: true
     });
     setInterval(() => {
       let newTime = new Date();  
@@ -578,7 +577,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       data.push([newTime, newValue]);  
       if (data.length > 30) data.shift();  
       graph.updateOptions({ file: data });  
-    }, 2000);
+    }, 5000);
   });
 </script>
 <hr>
