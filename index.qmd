@@ -298,8 +298,8 @@ Dygraphs is optimized to handle millions of data points without lag.
       title: 'Large Dataset',
       xlabel: 'Date',
       ylabel: 'Random Values',
-      legend: 'always'
-      color: 'orange',
+      legend: 'always',
+      colors: ['orange'],
     });
   });
 </script>
