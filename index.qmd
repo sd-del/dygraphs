@@ -142,6 +142,29 @@ Dygraphs makes it easy to zoom and pan across the timeline easily.
 
 Dygraphs allows plotting of multiple series on the same graph for easy trend comparisons.
 
+```html
+<div id = "graphdiv" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var data = "Date,Series1,Series2\n" +
+               "2025-02-01,100,300\n" +
+               "2025-02-02,200,400\n" +
+               "2025-02-03,150,600\n" +
+               "2025-02-04,250,850\n";
+    
+    new Dygraph(document.getElementById("graphdiv"), data, {
+      title: 'Multiple Series',
+      xlabel: 'Date',
+      ylabel: 'Value',
+      labels: ['Date', 'Series 1', 'Series 2'],
+      colors: ['blue', 'red'],
+      legend: 'always'
+    });
+  });
+</script>
+```
+
 ```{=html}
 <div id = "graphdiv" style = "width: 800px; height: 400px; margin: auto; display: block;"></div>
 
@@ -157,7 +180,7 @@ Dygraphs allows plotting of multiple series on the same graph for easy trend com
       title: 'Multiple Series',
       xlabel: 'Date',
       ylabel: 'Value',
-      labels: ['Data', 'Series 1', 'Series 2'],
+      labels: ['Date', 'Series 1', 'Series 2'],
       colors: ['blue', 'red'],
       legend: 'always'
     });
