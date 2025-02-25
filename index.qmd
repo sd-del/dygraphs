@@ -511,6 +511,17 @@ With its ability to work with huge datasets, support for different data formats,
 
 ---
 
+# Video Submission {#video-submission}
+
+<div style = "text-align: center;">
+  <video style = "max-width: 100%; height: auto;" controls>
+    <source src = "https://youtu.be/YD_PESiFyCg" type = "video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+---
+
 # References {#references}
 
 ## Dygraphs
