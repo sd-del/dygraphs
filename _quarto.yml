@@ -18,6 +18,8 @@ website:
         text: Use Cases
       - href: index.qmd#conclusion
         text: Conclusion
+      - href: index.qmd#video-submission
+        text: Video Submission
       - href: index.qmd#references
         text: References
 
